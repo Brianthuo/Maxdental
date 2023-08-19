@@ -16,22 +16,9 @@
         cursor: pointer;
         z-index: 100;
 
-        .logo{
-            margin-left: 2em;
-            img{
-                width: 5em;
-                height: 5em;
-                object-fit: cover;
-            }
-
-        }
-
-        &:hover{
-            background-color: #78ff7a8c;
-        }
-
         @include sm{
-             
+           height: auto;
+           background-color: #009860;
         }
         @include md{
            
@@ -46,15 +33,30 @@
         
         }
 
+        .logo{
+            margin-left: 2em;
+            img{
+                width: 5em;
+                height: 5em;
+                object-fit: cover;
+            }
+
+        }
+
+        &:hover{
+            background-color: #78ff7a8c;
+        }
+
+       
+
         .elements{
             
         @include sm{
-           display: flex;
-           flex-direction: column; 
+            
            
         }
         @include md{
-           
+        
         }
         @include lg{
 
@@ -71,6 +73,25 @@
             justify-content: space-around; 
             list-style: none;
             gap: 1.5em;
+
+            @include sm{
+               gap: .5em;
+               flex-direction: column;
+            }
+            @include md{
+               
+            }
+            @include lg{
+    
+            }
+            @include xl{
+               
+            }
+            @include breakpoint(1200px){
+            
+            }
+
+    
 
             li{
                 padding: 12px;
@@ -90,7 +111,30 @@
             }
             }
         }
+        .icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #fff;
+            margin-right: 2em;
+            @include sm{
+                
+             }
+             @include md{
+              
+             }
+             @include lg{
+
+             }
+             @include xl{
+             }
+             @include breakpoint(1200px){
+               
+             } 
+        }
     }
+
 
     .carousel{
         width: 100%;

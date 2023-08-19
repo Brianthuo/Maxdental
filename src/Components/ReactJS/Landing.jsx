@@ -3,7 +3,7 @@ import '../Stylesheets/Landing.scss'
 import dentalchair from '../Assets/dentalChair.jpg'
 import Checkup from '../Assets/checkup.jpg'
 import frontdesk from '../Assets/frontdesk.jpg'
-import {AiOutlineHome, AiOutlineMail} from 'react-icons/ai'
+import {AiOutlineHome, AiOutlineMail, AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
 import {VscLocation} from 'react-icons/vsc'
 import {TbDental} from 'react-icons/tb'
 import {BsHospital} from 'react-icons/bs'
@@ -192,6 +192,7 @@ const images = [
 const Landing = () => {
       // Define the state for the current index of the carousel
   const [index, setIndex] = useState(0);
+  const [open , setOpen]=useState(false)
 
   // Define the function to go to the next image
   const next = () => {
@@ -213,31 +214,44 @@ const Landing = () => {
     return () => clearTimeout(timer);
   }, [index]); // Only run the effect when the index changes
 
+  const close =()=>{
+    setOpen(!open)
+  }
+
   return (
     <div className='Landing'>
+      
         <div className="navbar">
             <div className="logo"><img src={logo} alt="maxdental" /> </div>
-            <div className="elements">
-                <ul>
-                <Link to='carousel'  spy={true} smooth={true} offset={-100} duration={500}>
-                    <li> <AiOutlineHome className='navicon'/> <p>Home</p></li>
-                </Link>
-                <Link to='about'  spy={true} smooth={true} offset={-100} duration={500}>
-                    <li>  <BsHospital className='navicon'/> <p>why us</p></li>
-                </Link>
-                <Link to='Services'  spy={true} smooth={true} offset={-100} duration={500}>
-                    <li>  <TbDental className='navicon'/> <p>Our services</p></li>
-                </Link>
-                <Link to='testimonials'  spy={true} smooth={true} offset={-100} duration={500}>
-                    <li> <GrGroup  className='navicon'/>  <p>testimonials</p></li>
-                </Link>
-                <Link to='team'  spy={true} smooth={true} offset={-100} duration={500}>
-                    <li> <GiMedicalPack className='navicon'/> <p>The Team</p></li>
-                </Link>
-                <Link to='appointment'  spy={true} smooth={true} offset={-100} duration={500}>
-                    <li> <BiPhoneCall className='navicon'/> <p>Make an appointment</p></li>
-                </Link>
-                </ul>
+            {
+              open && 
+                  <div className="elements">
+                      <ul>
+                      <Link to='carousel'  spy={true} smooth={true} offset={-100} duration={500}>
+                          <li> <AiOutlineHome className='navicon'/> <p>Home</p></li>
+                      </Link>
+                      <Link to='about'  spy={true} smooth={true} offset={-100} duration={500}>
+                          <li>  <BsHospital className='navicon'/> <p>why us</p></li>
+                      </Link>
+                      <Link to='Services'  spy={true} smooth={true} offset={-100} duration={500}>
+                          <li>  <TbDental className='navicon'/> <p>Our services</p></li>
+                      </Link>
+                      <Link to='testimonials'  spy={true} smooth={true} offset={-100} duration={500}>
+                          <li> <GrGroup  className='navicon'/>  <p>testimonials</p></li>
+                      </Link>
+                      <Link to='team'  spy={true} smooth={true} offset={-100} duration={500}>
+                          <li> <GiMedicalPack className='navicon'/> <p>The Team</p></li>
+                      </Link>
+                      <Link to='appointment'  spy={true} smooth={true} offset={-100} duration={500}>
+                          <li> <BiPhoneCall className='navicon'/> <p>Make an appointment</p></li>
+                      </Link>
+                      </ul>
+                  </div>
+            }
+            <div className="icons">
+              {
+                open ? <AiOutlineClose onClick={close}/> : <AiOutlineMenu onClick={close}/>
+              }
             </div>
         </div>
 
