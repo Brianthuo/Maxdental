@@ -36,8 +36,8 @@ import maxxdentalChair from '../Assets/maxxdentalchair.jpg'
 import maxxdentalcheckup from '../Assets/maxxdentalCheckup.jpg'
 import { Link } from 'react-scroll'
 import logo from '../Assets/logo-removebg-preview.png'
-
-
+import Child from '../Assets/child.jpg'
+import brian from '../Assets/brian.jpg'
 
 
 // Define the images for the carousel
@@ -88,25 +88,25 @@ const images = [
       id:5,
       img: whiten,
       title: "Teeth Whitening",
-      text: "this is a dental serviceYou want to have a beautiful smile with white teeth. Teeth whitening can help you achieve that. There are many ways to whiten your teeth, but some are better than others. Some may hurt your teeth or gums. Our teeth whitening service is the best option for you. We use safe and effective products that make your teeth white fast."
+      text: "This is a dental serviceYou want to have a beautiful smile with white teeth. Teeth whitening can help you achieve that. There are many ways to whiten your teeth, but some are better than others. Some may hurt your teeth or gums. Our teeth whitening service is the best option for you. We use safe and effective products that make your teeth white fast."
     },
     {
       id:6,
       img: extraction,
       title: "tooth extraction",
-      text: " It can be easy or hard, but we will make you comfortable. After the tooth is gone, you may have some problems, but we will help you. You should also get a new tooth to replace the old one. This will make you happy. We can help you with that too."
+      text: "Tooth extraction is a dental procedure that involves removing a tooth. Dentists and oral surgeons perform this procedure for various reasons such as dental cavities, gum disease, dental infections, trauma or crowding. The procedure is relatively quick and can be done on an outpatient basis with either local, general, intravenous anesthesia or a combination. Maxx Dental can help you."
     },
     {
       id:7,
       img: rootCanal,
       title: "root canal",
-      text: "A root canal is a dental procedure that saves your tooth. It removes the bad part of your tooth, seals it, and restores it. A root canal can improve your oral health, function, and appearance. A root canal is done by a dentist. You may have some pain after, but you can take medicine. You should also care for your tooth and see your dentist."
+      text: "A root canal is a dental procedure that releives pain caused by an infected tooth.During this procedure the inflamed pulp is removed and the surface is cleaned and a filling is added to seal the place . A root canal can improve your oral health, function, and appearance.Our experienced dentists use state-of-the-art equipment and techniques to ensure that your root canal therapy is as comfortable and pain-free as possible."
     },
     {
       id:8,
       img: venia,
       title: "Replacement",
-      text: "A tooth implant is an artificial tooth root that replaces a missing tooth. It is surgically inserted into your jawbone and bonded with the bone. A crown is then attached to the implant to look and function like a natural tooth123. Max dental offers high-quality tooth implant/replacement services with skilled oral surgeons and modern technology. Contact us today or visit our website to schedule a consultation."
+      text: "Tooth replacement is a dental procedure that involves restoring a lost tooth or teeth to restore your dental function and make your smile healthier and more appealing. Dental implants are a reliable type of tooth replacement that both looks and feels like a real tooth. They provide a permanent solution if you need to replace a single tooth or multiple teeth in different areas. "
     },
   ]
 
@@ -153,13 +153,13 @@ const images = [
     {
       id: 1,
       name: "Brian Thuo",
-      image: assistant,
+      image: brian,
       text:"I would get toothaches in morning thinking it was a cavity or toothdecay but i was wrong,when i went to max dental i had my teeth cleaned and since then i not goten this issue agian i did not even have to use the pain killers i was prescribed"
     },
     {
       id: 2,
       name: "Joan wanjiru",
-      image: assistant,
+      image: Child,
       text:"I would get toothaches in morning thinking it was a cavity or toothdecay but i was wrong,when i went to max dental i had my teeth cleaned and since then i not goten this issue agian i did not even have to use the pain killers i was prescribed"
     },
     {
@@ -272,11 +272,11 @@ const Landing = () => {
           <h2>Why choose US</h2>
           <p>Welcome to MaxxDental, your trusted partner for oral health. We have been serving the community for almost 10 years, providing quality dental care for patients of all ages. Whether you need a routine checkup, a cosmetic makeover, or a complex treatment, we have the experience, expertise, and equipment to meet your needs.
 
-At MaxxDental, we have a team of highly qualified and experienced dentists who are committed to excellence in dentistry. They use the latest technology and techniques to ensure your comfort and satisfaction. Our dentists are also friendly and compassionate, and they will listen to your concerns and explain your options clearly.
+At MaxxDental, we have a team of highly qualified and experienced dentists who are committed to excellence in dentistry. They use the latest technology and techniques to ensure your comfort and satisfaction. Our dentists are also friendly and compassionate to children, and they will listen to your concerns and explain your options clearly.
 
 We are proud to have earned the trust and loyalty of many satisfied customers over the years. Our patients appreciate our professionalism, honesty, and affordability. They also love our cozy and relaxing atmosphere, where they can feel at ease and enjoy their visit. You can read some of their testimonials on our website or on our social media pages.
 
-If you are looking for a dental clinic that cares about your smile and your health, look no further than MaxxDental. We are conveniently located in Thika, Kiambu, and we are open from Monday to Saturday. You can book an appointment online or by phone, or you can walk in anytime. We look forward to seeing you soon!</p>
+If you are looking for a dental clinic that cares about your smile and your health, look no further than MaxxDental. We are conveniently located in Thika Town, Kiambu County, and we are open from Monday to Saturday. You can book an appointment online or by phone, or you can walk in anytime. We look forward to seeing you soon!</p>
           </div>
         </div>
 
@@ -374,14 +374,14 @@ If you are looking for a dental clinic that cares about your smile and your heal
               <ul>
                 <li><VscLocation className='navicon'/><p>Marks Plaza 1st floor,Post lane,Off uhuru street,Thika</p></li>
                 <li> <BiPhoneCall className='navicon'/> <p>0728540053</p></li>
-                <li><AiOutlineMail className='navicon'/><p>Email: Clinic@maxxdental.co.ke</p></li>
+                <li><AiOutlineMail className='navicon'/><p>Email: maxxdental1@gmail.com</p></li>
               </ul>
           </div>
           <div className="working">
             <h4>Working hours</h4>
             <ul>
               <li>Monday-friday: 8Am-6PM</li>
-              <li>Saturday: 9AM - 3PM</li>
+              <li>Saturday: 8AM - 6PM</li>
               <li>Sunday: Closed</li>
             </ul>
           </div>
