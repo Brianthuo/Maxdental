@@ -372,7 +372,7 @@ If you are looking for a dental clinic that cares about your smile and your heal
           <div className="location">
             <h4>Find us</h4>
               <ul>
-                <li><VscLocation className='navicon'/><p>Marks Plaza 1st floor,Post lane,Off uhuru street,Thika</p></li>
+                <li><VscLocation className='navicon'/><p>located next to khatias supermarket. <br /> 1st floor of Mark's plaza . <br />commercial street Thika town</p></li>
                 <li> <BiPhoneCall className='navicon'/> <p>0728540053</p></li>
                 <li><AiOutlineMail className='navicon'/><p>Email: maxxdental1@gmail.com</p></li>
               </ul>
