@@ -38,6 +38,7 @@ import { Link } from 'react-scroll'
 import logo from '../Assets/logo-removebg-preview.png'
 import Child from '../Assets/child.jpg'
 import brian from '../Assets/brian.jpg'
+import man from'../Assets/man.jpg'
 
 
 // Define the images for the carousel
@@ -154,19 +155,19 @@ const images = [
       id: 1,
       name: "Brian Thuo",
       image: brian,
-      text:"I would get toothaches in morning thinking it was a cavity or toothdecay but i was wrong,when i went to max dental i had my teeth cleaned and since then i not goten this issue agian i did not even have to use the pain killers i was prescribed"
+      text:"I used to get toothaches in the morning and thought it was a cavity or tooth decay. But when I went to Maxx Dental, they cleaned my teeth and since then I haven’t had this issue again. I didn’t even have to use the painkillers I was prescribed. The staff at Maxx Dental were so friendly and professional, and they made me feel comfortable throughout the entire process. I highly recommend Maxx Dental to anyone looking for quality dental care"
     },
     {
       id: 2,
-      name: "Joan wanjiru",
+      name: "Khadija mohammend",
       image: Child,
-      text:"I would get toothaches in morning thinking it was a cavity or toothdecay but i was wrong,when i went to max dental i had my teeth cleaned and since then i not goten this issue agian i did not even have to use the pain killers i was prescribed"
+      text:"I was really nervous about getting my braces fixed, but the staff at Maxx Dental made me feel so comfortable and at ease. They explained everything to me and answered all of my questions. The procedure was quick and painless, and I’m so happy with the results! My teeth look amazing and I can’t stop smiling. Thank you so much, Maxx Dental!"
     },
     {
       id: 3,
       name: "paul kimani",
-      image: assistant,
-      text:"I would get toothaches in morning thinking it was a cavity or toothdecay but i was wrong,when i went to max dental i had my teeth cleaned and since then i not goten this issue agian i did not even have to use the pain killers i was prescribed"
+      image: man,
+      text:"“I was really nervous about getting root canal therapy, but the staff at Maxx Dental made me feel so comfortable and at ease. They explained everything to me and answered all of my questions. The procedure was quick and painless, and I’m so happy with the results! My tooth feels so much better now and I can eat without any pain. Thank you so much, Maxx Dental!"
     }
   ]
 
